@@ -1,0 +1,17 @@
+```env
+# ⚙️ BOT LANG ENV CONFIG
+
+# 👤 Owner details
+OWNER_NUMBER="255712345678"
+BOT_NAME="ADAX-TETCH"
+REGION="Tanzania"
+
+# 🌐 External API keys (example placeholder)
+OPENAI_KEY="your_openai_api_key_here"
+WEATHER_API="your_weather_api_key_here"
+
+# 🔧 Feature toggles
+AUTO_REACT=true
+AI_MODE=true
+READ_STATUS=true
+```
