@@ -1,5 +1,5 @@
-}
-"name": "adax-tetch",
+{
+  "name": "adax-tetch",
   "version": "2.0.0",
   "description": "🔥 ADAX-TETCH — WhatsApp bot ya Tanzania, yenye moto wa akili. Mess with the best, perish like the rest.",
   "main": "index.js",
