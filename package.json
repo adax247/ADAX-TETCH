@@ -1,0 +1,39 @@
+}
+"name": "adax-tetch",
+  "version": "2.0.0",
+  "description": "🔥 ADAX-TETCH — WhatsApp bot ya Tanzania, yenye moto wa akili. Mess with the best, perish like the rest.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adax247/ADAX-TETCH.git"
+},
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "AI",
+    "react",
+    "group",
+    "automation",
+    "menu",
+    "tanzania",
+    "adax"
+  ],
+  "author": "ADAX 🇹🇿",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.18",
+    "qrcode-terminal": "^0.12.0",
+    "pino": "^8.14.2",
+    "chalk": "^4.1.2",
+    "axios": "^1.6.8",
+    "dotenv": "^16.3.1",
+    "fs-extra": "^11.2.0",
+    "@hapi/boom": "^12.0.0",
+    "moment": "^2.30.1"
+}
+}
