@@ -12,7 +12,6 @@ const qrcode = require('qrcode-terminal');
 const chalk = require('chalk');
 const { Boom} = require('@hapi/boom');
 
-// 🎉 Emoji list (50+)
 const emojis = [
   "🔥","😂","😍","😎","🤖","💯","🎉","😢","👏","🎶",
   "🚀","🌍","❤️","🫶","🎯","📸","🐧","👻","🧘","🦾",
@@ -35,12 +34,12 @@ async function startBot() {
 
   sock.ev.on('creds.update', saveCreds);
 
-  // 🔄 Connection & QR
   sock.ev.on('connection.update', ({ connection, lastDisconnect, qr}) => {
     if (qr) {
       console.log(chalk.blue('📲 Scan QR haraka kabla haija-expire!'));
       qrcode.generate(qr, { small: true});
 }
+
     if (connection === 'close') {
       const reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
       if (reason === DisconnectReason.loggedOut) {
@@ -55,31 +54,34 @@ async function startBot() {
 }
 });
 
-  // 📨 Message Handler
   sock.ev.on('messages.upsert', async ({ messages}) => {
     const msg = messages[0];
-    if (!msg.message || msg.key.fromMe || msg.key.remoteJid === 'status@broadca>
+    if (!msg.message || msg.key.fromMe || msg.key.remoteJid === 'status@broadcast') return;
 
     const from = msg.key.remoteJid;
-    const text = msg.message?.conversation || msg.message?.extendedTextMessage?>
+    const text = msg.message?.conversation || msg.message?.extendedTextMessage?.text;
 
-    // 🕹️ Always online, Typing & Recording
     await sock.sendPresenceUpdate('available');
     await sock.sendPresenceUpdate('composing', from);
     await sock.sendPresenceUpdate('recording', from);
 
-    // ✅ Auto Read
     await sock.readMessages([msg.key]);
 
-    // 🎭 Auto React
     const emoji = emojis[Math.floor(Math.random() * emojis.length)];
     await sock.sendMessage(from, { react: { text: emoji, key: msg.key}});
 
-    // 🤖 AI Placeholder
     if (text?.toLowerCase() === 'ai') {
-      await sock.sendMessage(from, { text: '🤖 Karibu kwenye BOT LANG AI! Uliza>
+      await sock.sendMessage(from, {
+        text: '🤖 Karibu kwenye BOT LANG AI! Uliza swali lolote.'
+});
 }
 
-    // 📋!menu Command
     if (text?.toLowerCase() === '!menu') {
       await sock.sendMessage(from, {
+        text: `*BOT LANG🔥 Menu*\n1️⃣ Auto react\n2️⃣ Typing & Recording\n3️⃣ AI mode\n4️⃣!menu command`
+});
+}
+});
+}
+
+startBot();
