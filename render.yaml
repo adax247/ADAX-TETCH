@@ -1,0 +1,13 @@
+
+```yaml
+services:
+  - type: web
+    name: adax-tetch
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    repo: https://github.com/adax247/ADAX-TETCH.git
+    branch: main
+    autoDeploy: true
+```
