@@ -1,54 +1,63 @@
-WhatsApp bot project, *ADAX-TETCH*, with the tagline *“Mess with the best, perish like the rest”* woven in like fire:
-
----
 
 ```md
-# 🚀 ADAX-TETCH WhatsApp Bot 🔥
+# 🚀 ADAX-TETCH WhatsApp Bot 🇹🇿🔥
 
 > _Mess with the best, perish like the rest._
 
-Welcome to **ADAX-TETCH** — a no-nonsense, full-throttle WhatsApp bot built for power, precision, and personality. This isn't your average script. It's an artillery of intelligent automation fused with street-smart responses that make your WhatsApp experience legendary.
+Karibu kwenye **ADAX-TETCH** — WhatsApp bot adax tetch on fire 🔥  akili bandia, emoji reaction , na roho ya mtaa.
+more contacts me on whatsapp:https://wa.me/255693739500
+ kutumia Baileys, Node.js, na moto kutoka kwa ADAX mwenyewe 🔥
 
 ---
 
 ## 🌟 Features
 
-- 🎉 50+ Emoji Auto Reactions — randomly served with flair
-- 📸 View-Once Media Unlocker — nothing hides from ADAX
-- 🧠 AI Chat Mode — ready to reason or roast, your call
-- 💬 Fake Typing & 🎙️ Recording Presence — it's always active
-- 🟢 Always Online — because legends don't sleep
-- 📋 `!menu` command — access all functions instantly
-- 👥 Group TagAll — summon every soul with style
-- ✅ Auto Read — no ghosting here
-- ⭐ Auto Like Status (Beta) — because your vibe deserves hearts
+- 🤖 AI Mode — bot inazungumza na akili za kisasa
+- 💬 Fake Typing + 🎙️ Recording — bot inaonekana active
+- 📲 QR Scan kwa login ya haraka
+- ❤️ Auto React (emoji random 50+)
+- 👥 `!tagall` — mentions kwa group lote
+- 📋 `!menu` — commands zote kwa mpigo
+- 📸 View-once unlocker — hakuna cha kujificha
+- ✅ Auto Read — no ghosting, just vibes
 
+---
 
+## 🔧 Installation
+
+```bash
+npm install
+node index.js
 ```
-✅ BOT LANG Connected! Ready to blast 🚀
-```
 
-You're in
-
-*🧠 Philosophy*
-
-ADAX-TETCH isn’t just code. It’s culture.
-It reacts, replies, listens, and unleashes — all while owning the moment.
-If you mess with the best, you already know the rest.
+📱 Scan QR kwenye simu ya pili
+👀 Ukiona `✅ BOT LANG Connected!`, uko live
 
 ---
 
 *💬 Commands*
-CommandDescription`!menu`Lists available features`!tagall`Mentions all group members`ai`Activates AI chat mode`ping`Test bot activity---
+CommandKazi Yake`!menu`Orodha ya commands zote`ai`AI Chat Mode`!tagall`Mention group members wote`ping`Test bot responsiveness---
 
-*🧔 Built by the bold, for the bold.*
+*🧠 Philosophy*
 
-Built on Baileys. Powered by ambition.
-ADAX-TETCH isn't just live. It's alive.
+> ADAX-TETCH si script tu. Ni tabia, ni vibe, ni moto.
+> Ukiingilia wenye nguvu, usishangae ukapotea kimya kimya...
 
 ---
 
-Endorsed by nobody. Feared by everybody.
+*✍️ Author*
+
+*ADAX 🇹🇿*
+GitHub: [@adax247](https://github.com/adax247)
+
+---
+
+*📄 License*
+
+Licensed under *MIT*
+
 ```
 
-🦾 _BOT LANG 2.0 — More than a bot. It's vibe
+---
+
+🔥 
